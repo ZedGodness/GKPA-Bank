@@ -18,13 +18,13 @@ A **Full-stack** project simulating a real-world banking ecosystem for inter-ban
 ## Team & Development Phases
 The project followed a collaborative methodology, divided into 4 key logical stages:
 
-1. **Backend Infrastructure & DB Setup** ([Name])
+1. **Backend Infrastructure & DB Setup** ([])
    * Initialized the Express server and designed the MySQL schema for GKPA Bank.
-2. **System Logic & API Integration** ([Name])
+2. **System Logic & API Integration** ([])
    * Developed inter-bank logic and protocols for communication with the Central Registry.
-3. **Frontend Functionality** ([Name])
+3. **Frontend Functionality** ([])
    * Built core React components and managed data flow for transactions.
-4. **UI/UX Design & Optimization** ([Name])
+4. **UI/UX Design & Optimization** ([Preslav])
    * Finalized the corporate identity for GKPA Bank with a responsive, modern GUI.
 
 ## Installation
