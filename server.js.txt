@@ -1,0 +1,7 @@
+// server.js 
+app.post('/bankAPI/transactions/', async (req, res) => {
+  const { IBAN_sender, IBAN_receiver, amount, currency, reason } = req.body;
+  // Проверка за вътрешен или външен превод (код 605, 701) 
+  // Fetch към http://localhost:4000/bankRegister/bank/ 
+  // Обработка на статуси от банка бенефициент 
+});
