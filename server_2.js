@@ -33,7 +33,7 @@ app.post('/bankAPI/transactions/', async (req, res) => {
       return res.status(404).json({ code: 602, message: 'Sender not found' });
     }
 
-    // ✅ Проверка за лимит (604)
+    //  Проверка за лимит (604)
     if (amount > DAILY_LIMIT) {
       return res.status(400).json({
         code: 604,
@@ -41,7 +41,7 @@ app.post('/bankAPI/transactions/', async (req, res) => {
       });
     }
 
-    // ✅ Проверка за наличност (601)
+    //  Проверка за наличност (601)
     if (senderAccount.balance < amount) {
       return res.status(400).json({
         code: 601,
@@ -53,7 +53,7 @@ app.post('/bankAPI/transactions/', async (req, res) => {
     const receiverBankCode = getBankCodeFromIBAN(IBAN_receiver);
 
     // =========================
-    // 🔁 ВЪТРЕШЕН ПРЕВОД (605)
+    // ВЪТРЕШЕН ПРЕВОД (605)
     // =========================
     if (senderBankCode === receiverBankCode) {
       const receiverAccount = findAccount(IBAN_receiver);
@@ -82,7 +82,7 @@ app.post('/bankAPI/transactions/', async (req, res) => {
     }
 
     // =========================
-    // 🌍 ВЪНШЕН ПРЕВОД
+    //  ВЪНШЕН ПРЕВОД
     // =========================
 
     try {
